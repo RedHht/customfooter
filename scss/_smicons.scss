@@ -4,70 +4,68 @@ $margin: auto; //Modify the margin of the icons
 
 //You can modify this 3 variables to edit the general aspects of the buttons
 
-@mixin defaulticn {
-    margin: $margin;
-    outline: transparent;
-    display: inline-block;
-    margin: auto;
-    padding: $mainsize / 4;
-    color: $mainiconcolor;
-    cursor: pointer;
-    transition: background-color .7s;
-    transition-timing-function: ease-in-out;
-    font-size: $mainsize;
-    border-radius: 50%;
+@mixin defaulticn { /* The main mixin, this is shared between all icons */
+    margin: $margin; /* This is the margin of the icons, from the variable of the top of the file */
+    outline: transparent; /* Removes the outline for the icons */
+    display: inline-block; /* Stablish the display of the icons to inline block */
+    padding: $mainsize / 4; /* This is the padding of the icons, in other words, the distance between the icon and the radius, this takes que value from the variable of the top of the file */
+    color: $mainiconcolor; /* The main color of the icons, this takes que value from the variable of the top of the file */
+    cursor: pointer; /* Changes the cursor to pointer when the mouse its on the icon */
+    transition: background-color .7s; /* The time between the contact of the cursor and the reaction of the background was complete */
+    transition-timing-function: ease-in-out; /* The timing function of the transition */
+    font-size: $mainsize; /* The size of the icons, this takes que value from the variable of the top of the file */
+    border-radius: 50%; /* The radius of the icon when it get the change of background, this makes the section totally rounded */
 }
 
-.footerone__socialmedia {
-    text-align: right;
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin-left: auto;
+.footerone__socialmedia { /* The main div where the icons are located */
+    display: inline-flex; /* Stablish the display of the div, to flex, inline flex */
+    flex-wrap: wrap; /* Tell the flexbox to wrap the items in case the place gets too small */
+    margin-left: auto; /* This makes the left margin of the div gets auto, this just align the icons to the right */
     a {
-        text-decoration: transparent;
+        text-decoration: transparent; /* Remove the underline of anchor tags */
     }
 }
 
-.buttonsocialmedia {
-    -webkit-tap-highlight-color: transparent;
-    border-radius: 50%;
-    background-color: transparent;
-    border: none;
-    outline: none;
+.buttonsocialmedia {  /* Some styles to modify the buttons default look */
+    -webkit-tap-highlight-color: transparent; /* Removes the ugly tap highlight when the buttons get tapped on a phone */
+    border-radius: 50%; /* Change the border radius of the button */
+    background-color: transparent; /* Removes the background color of the buttons */
+    border: none; /* Removes the border of the buttons */
+    outline: none; /* Removes the outline of the buttons */ 
 }
 
-#twitter-icn {
-    @include defaulticn();
+#twitter-icn { /* Styles for the twitter icon button */
+    @include defaulticn(); /* The default mixin with all the styles */
 }
 
 #twitter-icn:hover {
-    background-color: #00ACEE;
-    border-radius: 50%;
+    background-color: #00ACEE; /* Set the color of the hover background */
+    border-radius: 50%; /* Stablish the border radius to 50% to make it rounded */
 }
 
-#instagram-icn {
-    @include defaulticn();
+#instagram-icn { /* Styles for the instagram icon button */
+    @include defaulticn(); /* The default mixin with all the styles */
 }
 
 #instagram-icn:hover {
-    background-color: rgb(222, 27, 134);
-    border-radius: 50%;
+    background-color: rgb(222, 27, 134); /* Set the color of the hover background */
+    border-radius: 50%; /* Stablish the border radius to 50% to make it rounded */
 }
 
-#linkedin-icn {
-    @include defaulticn();
+#linkedin-icn { /* Styles for the linkedin icon button */
+    @include defaulticn(); /* The default mixin with all the styles */
 }
 
 #linkedin-icn:hover {
-    background-color: #0e76A8;
-    border-radius: 50%;
+    background-color: #0e76A8; /* Set the color of the hover background */
+    border-radius: 50%; /* Stablish the border radius to 50% to make it rounded */
 }
 
-#facebook-icn {
-    @include defaulticn();
+#facebook-icn { /* Styles for the facebook icon button */
+    @include defaulticn(); /* The default mixin with all the styles */
 }
 
 #facebook-icn:hover {
-    background-color: #3B5998;
-    border-radius: 50%;
+    background-color: #3B5998; /* Set the color of the hover background */
+    border-radius: 50%; /* Stablish the border radius to 50% to make it rounded */
 }

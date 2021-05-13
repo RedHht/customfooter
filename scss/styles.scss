@@ -1,41 +1,48 @@
-@use "smicons";
-@use "footerone";
-@use "footertwo";
+@use "smicons"; /* Imports the styles of the social media icons */
+@use "footerone"; /* Import the styles of the top part of the footer */
+@use "footertwo"; /* Import the styles of the bottom part of the footer */
+
+/* Start of "normalization" tags */
 
 * {
-    margin: 0;
-    scroll-behavior: smooth;
+    margin: 0; /* Removing all the default margins of the tags */
+    scroll-behavior: smooth; /* Changin the scroll behaviour to make it more smooth (You can delete this, this is only for the presentation */
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* This tell's the navigator to remove the default underline of the anchor tags */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* End of "normalization" tags */
+
+/* Start of github presentation styles (Delete this if you gonna use this on your website) */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); /* Import a external font from google fonts */
 
 #main {
-    height: 100vh;
-    text-align: center;
-    vertical-align: middle;
-    div {
-        margin: 0;
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    height: 100vh; /* The heigh of the main screen with the "Scroll down to see the footer" text */
+    text-align: center; /* The horizontally align of the text */
+    div { /* Start of internal div styles */
+        margin: 0; /* Stablishing the margin in 0 */
+        position: absolute; /* Stablishing the position of the text */
+        top: 45%; /* Part of the centering of the text */
+        left: 50%; /* Part of the centering of the text */
+        transform: translate(-50%, -50%); /* Part of the centering of the text */
         a {
-            color: #000000;
+            color: #000000; /* The color of the anchor (link), this delete the ugly default blue color, puaj */
         }
         i {
-            transform: translateY(100px);
+            transform: translateY(100px); /* Positioning the arrow in the page */
         }
         h1 {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 50px;
+            font-family: 'Source Sans Pro', sans-serif; /*Stablishing a font for the main title*/
+            font-size: 50px; /*Stablishing the size of the main title */
         }
         h3 {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 25px;
+            font-family: 'Source Sans Pro', sans-serif; /*Stablishing a font for the subtitle*/
+            font-size: 25px; /*Stablishing the size of the subtitle */
         }
     }
 }
+
+/* End of github presentation styles */

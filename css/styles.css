@@ -1,107 +1,185 @@
+/*The background color for the first part of the footer */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+/* Imports the styles of the social media icons */
+/* Import the styles of the top part of the footer */
+/* Import the styles of the bottom part of the footer */
+/* Start of "normalization" tags */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 .footerone__socialmedia {
-  text-align: right;
+  /* The main div where the icons are located */
   display: inline-flex;
+  /* Stablish the display of the div, to flex, inline flex */
   flex-wrap: wrap;
+  /* Tell the flexbox to wrap the items in case the place gets too small */
   margin-left: auto;
+  /* This makes the left margin of the div gets auto, this just align the icons to the right */
 }
 .footerone__socialmedia a {
   text-decoration: transparent;
+  /* Remove the underline of anchor tags */
 }
 
 .buttonsocialmedia {
+  /* Some styles to modify the buttons default look */
   -webkit-tap-highlight-color: transparent;
+  /* Removes the ugly tap highlight when the buttons get tapped on a phone */
   border-radius: 50%;
+  /* Change the border radius of the button */
   background-color: transparent;
+  /* Removes the background color of the buttons */
   border: none;
+  /* Removes the border of the buttons */
   outline: none;
+  /* Removes the outline of the buttons */
 }
 
 #twitter-icn {
+  /* Styles for the twitter icon button */
+  /* The main mixin, this is shared between all icons */
   margin: auto;
+  /* This is the margin of the icons, from the variable of the top of the file */
   outline: transparent;
+  /* Removes the outline for the icons */
   display: inline-block;
-  margin: auto;
+  /* Stablish the display of the icons to inline block */
   padding: 0.5em;
+  /* This is the padding of the icons, in other words, the distance between the icon and the radius, this takes que value from the variable of the top of the file */
   color: #ffffff;
+  /* The main color of the icons, this takes que value from the variable of the top of the file */
   cursor: pointer;
+  /* Changes the cursor to pointer when the mouse its on the icon */
   transition: background-color 0.7s;
+  /* The time between the contact of the cursor and the reaction of the background was complete */
   transition-timing-function: ease-in-out;
+  /* The timing function of the transition */
   font-size: 2em;
+  /* The size of the icons, this takes que value from the variable of the top of the file */
   border-radius: 50%;
+  /* The radius of the icon when it get the change of background, this makes the section totally rounded */
+  /* The default mixin with all the styles */
 }
 
 #twitter-icn:hover {
   background-color: #00ACEE;
+  /* Set the color of the hover background */
   border-radius: 50%;
+  /* Stablish the border radius to 50% to make it rounded */
 }
 
 #instagram-icn {
+  /* Styles for the instagram icon button */
+  /* The main mixin, this is shared between all icons */
   margin: auto;
+  /* This is the margin of the icons, from the variable of the top of the file */
   outline: transparent;
+  /* Removes the outline for the icons */
   display: inline-block;
-  margin: auto;
+  /* Stablish the display of the icons to inline block */
   padding: 0.5em;
+  /* This is the padding of the icons, in other words, the distance between the icon and the radius, this takes que value from the variable of the top of the file */
   color: #ffffff;
+  /* The main color of the icons, this takes que value from the variable of the top of the file */
   cursor: pointer;
+  /* Changes the cursor to pointer when the mouse its on the icon */
   transition: background-color 0.7s;
+  /* The time between the contact of the cursor and the reaction of the background was complete */
   transition-timing-function: ease-in-out;
+  /* The timing function of the transition */
   font-size: 2em;
+  /* The size of the icons, this takes que value from the variable of the top of the file */
   border-radius: 50%;
+  /* The radius of the icon when it get the change of background, this makes the section totally rounded */
+  /* The default mixin with all the styles */
 }
 
 #instagram-icn:hover {
   background-color: #de1b86;
+  /* Set the color of the hover background */
   border-radius: 50%;
+  /* Stablish the border radius to 50% to make it rounded */
 }
 
 #linkedin-icn {
+  /* Styles for the linkedin icon button */
+  /* The main mixin, this is shared between all icons */
   margin: auto;
+  /* This is the margin of the icons, from the variable of the top of the file */
   outline: transparent;
+  /* Removes the outline for the icons */
   display: inline-block;
-  margin: auto;
+  /* Stablish the display of the icons to inline block */
   padding: 0.5em;
+  /* This is the padding of the icons, in other words, the distance between the icon and the radius, this takes que value from the variable of the top of the file */
   color: #ffffff;
+  /* The main color of the icons, this takes que value from the variable of the top of the file */
   cursor: pointer;
+  /* Changes the cursor to pointer when the mouse its on the icon */
   transition: background-color 0.7s;
+  /* The time between the contact of the cursor and the reaction of the background was complete */
   transition-timing-function: ease-in-out;
+  /* The timing function of the transition */
   font-size: 2em;
+  /* The size of the icons, this takes que value from the variable of the top of the file */
   border-radius: 50%;
+  /* The radius of the icon when it get the change of background, this makes the section totally rounded */
+  /* The default mixin with all the styles */
 }
 
 #linkedin-icn:hover {
   background-color: #0e76A8;
+  /* Set the color of the hover background */
   border-radius: 50%;
+  /* Stablish the border radius to 50% to make it rounded */
 }
 
 #facebook-icn {
+  /* Styles for the facebook icon button */
+  /* The main mixin, this is shared between all icons */
   margin: auto;
+  /* This is the margin of the icons, from the variable of the top of the file */
   outline: transparent;
+  /* Removes the outline for the icons */
   display: inline-block;
-  margin: auto;
+  /* Stablish the display of the icons to inline block */
   padding: 0.5em;
+  /* This is the padding of the icons, in other words, the distance between the icon and the radius, this takes que value from the variable of the top of the file */
   color: #ffffff;
+  /* The main color of the icons, this takes que value from the variable of the top of the file */
   cursor: pointer;
+  /* Changes the cursor to pointer when the mouse its on the icon */
   transition: background-color 0.7s;
+  /* The time between the contact of the cursor and the reaction of the background was complete */
   transition-timing-function: ease-in-out;
+  /* The timing function of the transition */
   font-size: 2em;
+  /* The size of the icons, this takes que value from the variable of the top of the file */
   border-radius: 50%;
+  /* The radius of the icon when it get the change of background, this makes the section totally rounded */
+  /* The default mixin with all the styles */
 }
 
 #facebook-icn:hover {
   background-color: #3B5998;
+  /* Set the color of the hover background */
   border-radius: 50%;
+  /* Stablish the border radius to 50% to make it rounded */
 }
 
+/* Imports a font from google fonts */
 .footerone {
+  /* Styles for the top part of the footer */
   display: flex;
+  /* Sets the type of display of the div */
   flex-direction: row;
+  /* Sets the direction of the main axis of the flexbox */
   flex-wrap: wrap;
-  justify-content: baseline;
-  background-color: #34656d;
+  /* Tells the flexbox to wrap the icons if the space its so small */
+  background-color: #334443;
+  /* The color of the background, this gets the value from the variable of the top of the file */
   padding: 10px;
+  /*The padding of the top part of the footer */
   border-bottom: 1px solid gray;
+  /* A divisory line to divide the top and bottom part of the footer */
 }
 
 .footerone__terms {
@@ -119,7 +197,6 @@
   text-decoration: none;
 }
 .footerone__terms span:hover {
-  /* border-bottom: 1px solid #ffffff;*/
   text-decoration: underline;
 }
 
@@ -153,38 +230,59 @@
 
 * {
   margin: 0;
+  /* Removing all the default margins of the tags */
   scroll-behavior: smooth;
+  /* Changin the scroll behaviour to make it more smooth (You can delete this, this is only for the presentation */
 }
 
 a {
   text-decoration: none;
+  /* This tell's the navigator to remove the default underline of the anchor tags */
 }
 
+/* End of "normalization" tags */
+/* Start of github presentation styles (Delete this if you gonna use this on your website) */
+/* Import a external font from google fonts */
 #main {
   height: 100vh;
+  /* The heigh of the main screen with the "Scroll down to see the footer" text */
   text-align: center;
-  vertical-align: middle;
+  /* The horizontally align of the text */
 }
 #main div {
+  /* Start of internal div styles */
   margin: 0;
+  /* Stablishing the margin in 0 */
   position: absolute;
+  /* Stablishing the position of the text */
   top: 45%;
+  /* Part of the centering of the text */
   left: 50%;
+  /* Part of the centering of the text */
   transform: translate(-50%, -50%);
+  /* Part of the centering of the text */
 }
 #main div a {
   color: #000000;
+  /* The color of the anchor (link), this delete the ugly default blue color, puaj */
 }
 #main div i {
   transform: translateY(100px);
+  /* Positioning the arrow in the page */
 }
 #main div h1 {
   font-family: "Source Sans Pro", sans-serif;
+  /*Stablishing a font for the main title*/
   font-size: 50px;
+  /*Stablishing the size of the main title */
 }
 #main div h3 {
   font-family: "Source Sans Pro", sans-serif;
+  /*Stablishing a font for the subtitle*/
   font-size: 25px;
+  /*Stablishing the size of the subtitle */
 }
+
+/* End of github presentation styles */
 
 /*# sourceMappingURL=styles.css.map */

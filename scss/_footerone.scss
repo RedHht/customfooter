@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+$topcolor: #334443; /*The background color for the first part of the footer */
 
-.footerone {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: baseline;
-    background-color: #34656d;
-    padding: 10px;
-    border-bottom: 1px solid gray;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap'); /* Imports a font from google fonts */
+
+.footerone { /* Styles for the top part of the footer */
+    display: flex; /* Sets the type of display of the div */
+    flex-direction: row; /* Sets the direction of the main axis of the flexbox */
+    flex-wrap: wrap; /* Tells the flexbox to wrap the icons if the space its so small */
+    background-color: $topcolor; /* The color of the background, this gets the value from the variable of the top of the file */
+    padding: 10px; /*The padding of the top part of the footer */
+    border-bottom: 1px solid gray; /* A divisory line to divide the top and bottom part of the footer */
 }
 
 .footerone__terms {
@@ -24,7 +25,6 @@
         }
     }
     span:hover {
-        /* border-bottom: 1px solid #ffffff;*/
         text-decoration: underline;
     }
 }
