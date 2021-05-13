@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+.footerone__socialmedia {
+  text-align: right;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.footerone__socialmedia a {
+  text-decoration: transparent;
+}
+
+.buttonsocialmedia {
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#twitter-icn {
+  margin: auto;
+  outline: transparent;
+  display: inline-block;
+  margin: auto;
+  padding: 0.5em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.7s;
+  transition-timing-function: ease-in-out;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+#twitter-icn:hover {
+  background-color: #00ACEE;
+  border-radius: 50%;
+}
+
+#instagram-icn {
+  margin: auto;
+  outline: transparent;
+  display: inline-block;
+  margin: auto;
+  padding: 0.5em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.7s;
+  transition-timing-function: ease-in-out;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+#instagram-icn:hover {
+  background-color: #de1b86;
+  border-radius: 50%;
+}
+
+#linkedin-icn {
+  margin: auto;
+  outline: transparent;
+  display: inline-block;
+  margin: auto;
+  padding: 0.5em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.7s;
+  transition-timing-function: ease-in-out;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+#linkedin-icn:hover {
+  background-color: #0e76A8;
+  border-radius: 50%;
+}
+
+#facebook-icn {
+  margin: auto;
+  outline: transparent;
+  display: inline-block;
+  margin: auto;
+  padding: 0.5em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.7s;
+  transition-timing-function: ease-in-out;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+#facebook-icn:hover {
+  background-color: #3B5998;
+  border-radius: 50%;
+}
+
+.footerone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  background-color: #34656d;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.footerone__terms {
+  display: inline-block;
+}
+.footerone__terms span {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 54px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffffff;
+  margin: 0 20px 0 20px;
+}
+.footerone__terms span a {
+  text-decoration: none;
+}
+.footerone__terms span:hover {
+  /* border-bottom: 1px solid #ffffff;*/
+  text-decoration: underline;
+}
+
+@media (max-width: 825px) {
+  .footerone__socialmedia {
+    margin-left: 0;
+    margin: 0 auto 0 auto;
+  }
+
+  .footerone__terms {
+    margin: 0 auto 0 auto;
+  }
+}
+@media (max-width: 550px) {
+  .footerone__terms span {
+    display: block;
+  }
+}
+.footertwo {
+  background-color: #334443;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid gray;
+}
+.footertwo span {
+  margin: 2px;
+  color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  display: block;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+#main div {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#main div a {
+  color: #000000;
+}
+#main div i {
+  transform: translateY(100px);
+}
+#main div h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 50px;
+}
+#main div h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */

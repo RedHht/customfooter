@@ -1,0 +1,73 @@
+$mainiconcolor: #ffffff; //Change the default icon color, its like, if you webpage have a white background, I recommend use black etc etc
+$mainsize: 2em; //The size of every single icon
+$margin: auto; //Modify the margin of the icons
+
+//You can modify this 3 variables to edit the general aspects of the buttons
+
+@mixin defaulticn {
+    margin: $margin;
+    outline: transparent;
+    display: inline-block;
+    margin: auto;
+    padding: $mainsize / 4;
+    color: $mainiconcolor;
+    cursor: pointer;
+    transition: background-color .7s;
+    transition-timing-function: ease-in-out;
+    font-size: $mainsize;
+    border-radius: 50%;
+}
+
+.footerone__socialmedia {
+    text-align: right;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    a {
+        text-decoration: transparent;
+    }
+}
+
+.buttonsocialmedia {
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#twitter-icn {
+    @include defaulticn();
+}
+
+#twitter-icn:hover {
+    background-color: #00ACEE;
+    border-radius: 50%;
+}
+
+#instagram-icn {
+    @include defaulticn();
+}
+
+#instagram-icn:hover {
+    background-color: rgb(222, 27, 134);
+    border-radius: 50%;
+}
+
+#linkedin-icn {
+    @include defaulticn();
+}
+
+#linkedin-icn:hover {
+    background-color: #0e76A8;
+    border-radius: 50%;
+}
+
+#facebook-icn {
+    @include defaulticn();
+}
+
+#facebook-icn:hover {
+    background-color: #3B5998;
+    border-radius: 50%;
+}

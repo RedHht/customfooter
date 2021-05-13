@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+.footerone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    background-color: #34656d;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.footerone__terms {
+    display: inline-block;
+    span {
+        font-family: 'Noto Sans JP', sans-serif;
+        line-height: 54px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #ffffff;
+        margin: 0 20px 0 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+    span:hover {
+        /* border-bottom: 1px solid #ffffff;*/
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 825px) {
+    .footerone__socialmedia {
+        margin-left: 0;
+        margin: 0 auto 0 auto;
+    }
+    .footerone__terms {
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .footerone__terms {
+        span {
+            display: block;
+        }
+    }
+}
+

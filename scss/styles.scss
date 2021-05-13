@@ -1,0 +1,41 @@
+@use "smicons";
+@use "footerone";
+@use "footertwo";
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+#main {
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    div {
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        a {
+            color: #000000;
+        }
+        i {
+            transform: translateY(100px);
+        }
+        h1 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 50px;
+        }
+        h3 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 25px;
+        }
+    }
+}
