@@ -1,4 +1,5 @@
 $topcolor: #34656d; /*The background color for the first part of the footer */
+$lettertermscolor: #ffffff; /* The color of all the text of the top part */
 
 .footerone { /* Styles for the top part of the footer */
     display: flex; /* Sets the type of display of the div */
@@ -16,7 +17,7 @@ $topcolor: #34656d; /*The background color for the first part of the footer */
         line-height: 54px; /* The  height of the line (I only use this to center the text) */
         font-weight: bold; /* The weight of the font */
         cursor: pointer; /* Tell the navigator to change the cursor to a pointer when the mouse pass through the item */
-        color: #ffffff; /* Color of the text, duh */
+        color: $lettertermscolor; /* Color of the text, duh */
         margin: 0 20px 0 20px; /* The margin of all diferent texts */
         a {
             text-decoration: none; /* Remove the default underline for anchor tags */

@@ -1,11 +1,14 @@
+$bottomcolor: #334443; /*The background color for the first part of the footer */
+$letterbottomcolor: #ffffff; /* The color of all the text of the top part */
+
 .footertwo { /* The bottom part of the footer */
-    background-color: #334443; /* The color of the second part of the footer, this takes the value from the top variables */
+    background-color: $bottomcolor; /* The color of the second part of the footer, this takes the value from the top variables */
     text-align: center; /* Align the text con the center  */
     padding: 10px 0 10px 0; /* Padding between the box and the text */
     border-bottom: 1px solid gray;
     span { /* Properties for the text lines */
         margin: 2px; /* Margin of every line */
-        color: #ffffff; /* Color of the text */
+        color: $letterbottomcolor; /* Color of the text */
         font-family: 'Noto Sans JP', sans-serif; /* The font of the text, taken from google fonts, the fons is on the archive _external.scss */
         display:  block; /* The display of every line, with this, every line gonna appear on a different line */
     }
