@@ -1,10 +1,6 @@
-/*The background color for the first part of the footer */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
-/* Imports the styles of the social media icons */
-/* Import the styles of the top part of the footer */
-/* Import the styles of the bottom part of the footer */
-/* Start of "normalization" tags */
+/* You can add external.... things... to this file */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 .footerone__socialmedia {
   /* The main div where the icons are located */
   display: inline-flex;
@@ -165,7 +161,8 @@
   /* Stablish the border radius to 50% to make it rounded */
 }
 
-/* Imports a font from google fonts */
+/*The background color for the first part of the footer */
+/* The color of all the text of the top part */
 .footerone {
   /* Styles for the top part of the footer */
   display: flex;
@@ -183,51 +180,93 @@
 }
 
 .footerone__terms {
+  /* The terms and text section of the footer */
   display: inline-block;
+  /* The default display of the block */
 }
 .footerone__terms span {
+  /* Properties for all texts in the text tection of the footer */
   font-family: "Noto Sans JP", sans-serif;
+  /* The font, imported from google fonts */
   line-height: 54px;
+  /* The  height of the line (I only use this to center the text) */
   font-weight: bold;
+  /* The weight of the font */
   cursor: pointer;
+  /* Tell the navigator to change the cursor to a pointer when the mouse pass through the item */
   color: #ffffff;
+  /* Color of the text, duh */
   margin: 0 20px 0 20px;
+  /* The margin of all diferent texts */
 }
 .footerone__terms span a {
   text-decoration: none;
+  /* Remove the default underline for anchor tags */
 }
 .footerone__terms span:hover {
   text-decoration: underline;
+  /* Adding underline when the cursor is above the text */
 }
 
+/* Responsive! */
+/* General tablet responsive */
 @media (max-width: 825px) {
+  /* The max width, if the width is major then this number, the changes gonna be applied */
   .footerone__socialmedia {
+    /* General changes of the social media icons */
     margin-left: 0;
+    /* Removes the previous margin */
     margin: 0 auto 0 auto;
+    /* Added right and left margin to center the item */
   }
 
   .footerone__terms {
     margin: 0 auto 0 auto;
+    /* Added right and left margin to center the item */
   }
 }
+/* End of General tablet responsive */
+/* General phone responsive */
 @media (max-width: 550px) {
+  /* The max width, if the width is major then this number, the changes gonna be applied */
   .footerone__terms span {
     display: block;
+    /* Change the display of the terms text to "block" with this, every item gonna appear in a different line */
   }
 }
+/* End of General phone responsive */
+/* Responsive! End */
+/*The background color for the first part of the footer */
+/* The color of all the text of the top part */
 .footertwo {
+  /* The bottom part of the footer */
   background-color: #334443;
+  /* The color of the second part of the footer, this takes the value from the top variables */
   text-align: center;
+  /* Align the text con the center  */
   padding: 10px 0 10px 0;
+  /* Padding between the box and the text */
   border-bottom: 1px solid gray;
 }
 .footertwo span {
+  /* Properties for the text lines */
   margin: 2px;
+  /* Margin of every line */
   color: #ffffff;
+  /* Color of the text */
   font-family: "Noto Sans JP", sans-serif;
+  /* The font of the text, taken from google fonts, the fons is on the archive _external.scss */
   display: block;
+  /* The display of every line, with this, every line gonna appear on a different line */
 }
 
+/* Start of importing lines */
+/* Imports the styles of the social media icons */
+/* Import the styles of the top part of the footer */
+/* Import the styles of the bottom part of the footer */
+/* Import external assets of the code*/
+/* End of importing lines */
+/* Start of "normalization" tags */
 * {
   margin: 0;
   /* Removing all the default margins of the tags */
@@ -242,7 +281,6 @@ a {
 
 /* End of "normalization" tags */
 /* Start of github presentation styles (Delete this if you gonna use this on your website) */
-/* Import a external font from google fonts */
 #main {
   height: 100vh;
   /* The heigh of the main screen with the "Scroll down to see the footer" text */
@@ -270,9 +308,13 @@ a {
   transform: translateY(100px);
   /* Positioning the arrow in the page */
   animation-name: animation;
+  /* Name of the position */
   animation-direction: alternate;
+  /* The animation gonna go and back all the time */
   animation-duration: 1s;
+  /* Duration of the animation */
   animation-iteration-count: infinite;
+  /* The quantity of repetitions of the arrow animation */
 }
 #main div h1 {
   font-family: "Source Sans Pro", sans-serif;
@@ -288,11 +330,14 @@ a {
 }
 
 @keyframes animation {
+  /* The animation of the arrow in the main page */
   0% {
     transform: translateY(100px);
+    /* Original position */
   }
   100% {
     transform: translateY(120px);
+    /* Final position */
   }
 }
 /* End of github presentation styles */
