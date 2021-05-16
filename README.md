@@ -14,10 +14,10 @@ If you dont have any idea of SCSS the fast install its the best choice, anyways,
 ```
 
 ### Base install
-If you want to install this like a base of your code, I recommend download the code and delete the lines 23-65 of ```styles.scss``` and the lines 21-31 of ```index.html``` and add wherever you want, ANYWAYS, I'm gonna create a download of the code without the presentation
+If you want to install this like a base of your code, I recommend download the code and delete the lines 23-65 of ```styles.scss``` and the lines 21-31 of ```index.html``` and add wherever you want, ANYWAYS, I'm gonna create a download of the code without the presentation (This is the link to download the code without presentation https://github.com/Sniper739/customfooter/releases/download/1.0/Custom.Footer.Clear.Code.rar)
 
 ## Extra
-Im gonna leave the code without the presentation, or the important part, anyways you can look the code in action in this link :) 
+Im gonna leave the code without the presentation, or the important part, anyways you can look the code in action in this link :) (This is the link to download the code without presentation https://github.com/Sniper739/customfooter/releases/download/1.0/Custom.Footer.Clear.Code.rar)
 
 https://sniper739.github.io/customfooter/
 
