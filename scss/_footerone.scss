@@ -1,6 +1,4 @@
-$topcolor: #334443; /*The background color for the first part of the footer */
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap'); /* Imports a font from google fonts */
+$topcolor: #34656d; /*The background color for the first part of the footer */
 
 .footerone { /* Styles for the top part of the footer */
     display: flex; /* Sets the type of display of the div */
@@ -11,39 +9,51 @@ $topcolor: #334443; /*The background color for the first part of the footer */
     border-bottom: 1px solid gray; /* A divisory line to divide the top and bottom part of the footer */
 }
 
-.footerone__terms {
-    display: inline-block;
-    span {
-        font-family: 'Noto Sans JP', sans-serif;
-        line-height: 54px;
-        font-weight: bold;
-        cursor: pointer;
-        color: #ffffff;
-        margin: 0 20px 0 20px;
+.footerone__terms { /* The terms and text section of the footer */
+    display: inline-block; /* The default display of the block */
+    span { /* Properties for all texts in the text tection of the footer */
+        font-family: 'Noto Sans JP', sans-serif; /* The font, imported from google fonts */
+        line-height: 54px; /* The  height of the line (I only use this to center the text) */
+        font-weight: bold; /* The weight of the font */
+        cursor: pointer; /* Tell the navigator to change the cursor to a pointer when the mouse pass through the item */
+        color: #ffffff; /* Color of the text, duh */
+        margin: 0 20px 0 20px; /* The margin of all diferent texts */
         a {
-            text-decoration: none;
+            text-decoration: none; /* Remove the default underline for anchor tags */
         }
     }
     span:hover {
-        text-decoration: underline;
+        text-decoration: underline; /* Adding underline when the cursor is above the text */
     }
 }
 
-@media (max-width: 825px) {
-    .footerone__socialmedia {
-        margin-left: 0;
-        margin: 0 auto 0 auto;
+/* Responsive! */
+
+/* General tablet responsive */
+
+@media (max-width: 825px) { /* The max width, if the width is major then this number, the changes gonna be applied */
+    .footerone__socialmedia { /* General changes of the social media icons */
+        margin-left: 0; /* Removes the previous margin */
+        margin: 0 auto 0 auto; /* Added right and left margin to center the item */
     }
     .footerone__terms {
-        margin: 0 auto 0 auto;
+        margin: 0 auto 0 auto; /* Added right and left margin to center the item */
     }
 }
 
-@media (max-width: 550px) {
+/* End of General tablet responsive */
+
+/* General phone responsive */
+
+@media (max-width: 550px) { /* The max width, if the width is major then this number, the changes gonna be applied */
     .footerone__terms {
         span {
-            display: block;
+            display: block; /* Change the display of the terms text to "block" with this, every item gonna appear in a different line */
         }
     }
 }
+
+/* End of General phone responsive */
+
+/* Responsive! End */
 

@@ -174,7 +174,7 @@
   /* Sets the direction of the main axis of the flexbox */
   flex-wrap: wrap;
   /* Tells the flexbox to wrap the icons if the space its so small */
-  background-color: #334443;
+  background-color: #34656d;
   /* The color of the background, this gets the value from the variable of the top of the file */
   padding: 10px;
   /*The padding of the top part of the footer */
@@ -269,6 +269,10 @@ a {
 #main div i {
   transform: translateY(100px);
   /* Positioning the arrow in the page */
+  animation-name: animation;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 #main div h1 {
   font-family: "Source Sans Pro", sans-serif;
@@ -283,6 +287,14 @@ a {
   /*Stablishing the size of the subtitle */
 }
 
+@keyframes animation {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(120px);
+  }
+}
 /* End of github presentation styles */
 
 /*# sourceMappingURL=styles.css.map */

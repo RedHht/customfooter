@@ -1,6 +1,11 @@
+/* Start of importing lines */
+
 @use "smicons"; /* Imports the styles of the social media icons */
 @use "footerone"; /* Import the styles of the top part of the footer */
 @use "footertwo"; /* Import the styles of the bottom part of the footer */
+@use "external"; /* Import external assets of the code*/
+
+/* End of importing lines */
 
 /* Start of "normalization" tags */
 
@@ -17,8 +22,6 @@ a {
 
 /* Start of github presentation styles (Delete this if you gonna use this on your website) */
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); /* Import a external font from google fonts */
-
 #main {
     height: 100vh; /* The heigh of the main screen with the "Scroll down to see the footer" text */
     text-align: center; /* The horizontally align of the text */
@@ -33,6 +36,10 @@ a {
         }
         i {
             transform: translateY(100px); /* Positioning the arrow in the page */
+            animation-name: animation; /* Name of the position */
+            animation-direction: alternate; /* The animation gonna go and back all the time */
+            animation-duration: 1s; /* Duration of the animation */
+            animation-iteration-count: infinite; /* The quantity of repetitions of the arrow animation */
         }
         h1 {
             font-family: 'Source Sans Pro', sans-serif; /*Stablishing a font for the main title*/
@@ -44,5 +51,15 @@ a {
         }
     }
 }
+
+@keyframes animation { /* The animation of the arrow in the main page */
+    0% {
+        transform: translateY(100px); /* Original position */
+    }
+    100% {
+        transform: translateY(120px); /* Final position */
+    }
+}
+
 
 /* End of github presentation styles */
